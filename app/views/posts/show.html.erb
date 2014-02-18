@@ -1,0 +1,12 @@
+<p>
+	<strong>Title:</strong>
+	<%= @post.title %>
+	
+</p>
+	<strong>Text:</strong>
+<%= @post.text %>
+</p>
+
+<%= image_tag @post.photo.url(:medium) %>
+
+<%= link_to 'Back', posts_path %>
